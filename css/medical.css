@@ -7,6 +7,10 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
+  .courses{
+    margin-top: 18px;
+  }
+
   .courses h1{
       text-align: center;
   }

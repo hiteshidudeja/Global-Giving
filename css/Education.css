@@ -196,6 +196,93 @@ body {
   font: 16px/1.6 Arial, sans-serif;
 }
 
+
+
+
+
+.float-layout {
+  padding: 20px 120px;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 20px;
+ 
+}
+
+.newscard-container {
+  overflow: hidden;
+}
+
+.newscard {
+  background-color: gray;
+  color: white;
+
+  min-height: 100%; /*replace this it in width: 100%*/
+  width: 70%;
+  float: right;
+ 
+  border-bottom-right-radius: 20px;
+ 
+}
+
+.newscard-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.newscard-desc {
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+/*add this it*/
+.newscard-image {
+  display: flex;
+  margin: 10px;
+}
+/*-------------*/
+
+div.newscard-image img {
+  width: 30%;
+  height: auto;
+}
+
+/* Phone Devices Query */
+@media only screen and (max-width: 37.5em) {
+  div.newscard-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /*add this it*/
+  .newscard-image {
+     flex-direction: column;
+  }
+  /*----------------------*/
+
+  .newscard {
+    width: 100%;
+    margin-top: -4px;
+  }
+}
+
+.news_btn
+{
+  
+  width: 90px;
+  margin: 20px 20px;
+  padding: 3px;
+  border-radius: 1px;
+}
+
+
+
+
 /* The footer is fixed to the bottom of the page */
 
 footer {

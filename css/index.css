@@ -1,11 +1,15 @@
 html {
   scroll-behavior: smooth;
+  
 }
 
 body {
   margin: 0;
+  color: #353839;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 .column1 {
   float: left;
@@ -37,6 +41,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
+  margin: 10px;
   padding: 0 4px;
 }
 
@@ -100,7 +105,7 @@ body {
 }
 
 /* Responsive columns */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .column {
     width: 100%;
     display: block;
@@ -110,7 +115,6 @@ body {
 
 /* Style the counter cards */
 .card {
- 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
@@ -121,13 +125,41 @@ body {
   box-shadow: 0 4px 10px 6px rgba(0, 0, 0, 0.2);
 }
 
+.services {
+  padding: 5px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .column1
+  {
+    width:100%;
+  }
+  .column2
+  {
+    width:100%;
+  }
+  .services
+  {
+    padding:0px;
+  }
+  .about
+  {
+    overflow: hidden;
+  }
+  div.float-layout {
+   width:100%;
+   padding:10px;
+  }
+}
+
 .float-layout {
   padding: 5px 120px;
   float: left;
   width: 100%;
   height: auto;
   box-sizing: border-box;
-  margin: 0;
+  margin: 7px;
 }
 
 .newscard-container {
@@ -140,6 +172,7 @@ body {
 
   min-height: 100%; /*replace this it in width: 100%*/
   width: 70%;
+  border-bottom-right-radius: 20px;
   float: right;
 }
 
@@ -193,3 +226,15 @@ div.newscard-image img {
   padding: 3px;
   border-radius: 1px;
 }
+
+
+.map
+{
+  padding: 10px;
+  margin: 20px;
+}
+
+iframe{
+  width: 100%;
+}
+

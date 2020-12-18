@@ -3,12 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.donate {
-  font-family: Georgia, serif;
-  font-size: 40px;
-  color: red;
-  margin-bottom: 20px;
-}
+
 input[type="text"],
 select,
 textarea {
